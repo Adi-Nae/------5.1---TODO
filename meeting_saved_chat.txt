@@ -1,0 +1,63 @@
+17:57:52	 From  Maayan Algresie - TEAM  to  Adi N(Privately) : היי עדי
+17:58:11	 From  Adi N  to  Maayan Algresie - TEAM(Privately) : היי
+17:58:20	 From  Maayan Algresie - TEAM  to  Adi N(Privately) : הצטרפתי במיוחד למעט זמן כי מירית אמרה שאת צריכה מישהי שמבינה בריאקט
+17:58:25	 From  Adi N  to  Maayan Algresie - TEAM(Privately) : נכון
+17:58:34	 From  Adi N  to  Maayan Algresie - TEAM(Privately) : אני אבקש שיעבירו אותנו לחדר, זה בסדר?
+17:58:39	 From  Maayan Algresie - TEAM  to  Adi N(Privately) : נלך לחדר web?
+17:58:45	 From  Adi N  to  Maayan Algresie - TEAM(Privately) : כן
+17:58:49	 From  Maayan Algresie - TEAM  to  Adi N(Privately) : אני לא יכולה להפעיל מיקרופון
+18:01:10	 From  Adi N : לשמוע את יכולה?
+18:03:19	 From  Adi N : האינטנט כאן נפל
+18:03:25	 From  Maayan Algresie - TEAM : שומעת שפתחת את המיקרופון
+18:03:29	 From  Adi N : ואני לא יודעת אם את שומעת אותי או לא
+18:04:55	 From  Maayan Algresie - TEAM : את יכולה להראות לי איפה הפונקציה onclick של הכפתור?
+18:05:53	 From  Maayan Algresie - TEAM : לא זה של איבר ברשימה הפתור איקס
+18:05:54	 From  Maayan Algresie - TEAM : איפה של השורת חיפוש
+18:06:20	 From  Maayan Algresie - TEAM : אני רוצה את הכפתור הוסף
+18:06:47	 From  Maayan Algresie - TEAM : אוקיי
+18:07:05	 From  Maayan Algresie - TEAM : את שמה לב שאת עושה this.setState 
+18:07:13	 From  Maayan Algresie - TEAM : אז את לא באמת משנה את הstate
+18:07:43	 From  Maayan Algresie - TEAM : ובגלל זה את לא רואה את ההוספה שלך
+18:08:02	 From  Maayan Algresie - TEAM : הבנת למה התכוונתי?
+18:08:18	 From  Maayan Algresie - TEAM : תראי לי את initialState
+18:08:27	 From  Maayan Algresie - TEAM : תלחצי cyrl
+18:08:30	 From  Maayan Algresie - TEAM : ctrl
+18:08:39	 From  Maayan Algresie - TEAM : ןאז עליו
+18:09:05	 From  Maayan Algresie - TEAM : איפה מוגגר initialState
+18:09:56	 From  Maayan Algresie - TEAM : אוקיי
+18:10:05	 From  Maayan Algresie - TEAM : פשוא תמחקי את השורה this.setState
+18:10:27	 From  Maayan Algresie - TEAM : ktt
+18:10:28	 From  Maayan Algresie - TEAM : לאא
+18:10:40	 From  Maayan Algresie - TEAM : ב onClick
+18:10:57	 From  Maayan Algresie - TEAM : תנסי עכשיו
+18:15:59	 From  Maayan Algresie - TEAM : אוקיי אני אגיד לך מה דעתי ותחשבי אם בא לנו לנסות את זה כי זה מעט עבודה
+18:16:18	 From  Maayan Algresie - TEAM : מה הרעיון בריאקט?הוא יודע מתי לרענן את הדך לפי הstate
+18:16:41	 From  Maayan Algresie - TEAM : את משתמשת בitemsList ןמשנה אותו
+18:16:52	 From  Maayan Algresie - TEAM : אבל הוא לא חלק מהstate שלך
+18:17:19	 From  Maayan Algresie - TEAM : ובגלל זה הדף לא יודע שהוא צריך לכבור רענון
+18:17:22	 From  Maayan Algresie - TEAM : לעבור
+18:17:53	 From  Maayan Algresie - TEAM : אם נשים את itemsList כחלק מהstate אולי זה יכבוד
+18:18:21	 From  Maayan Algresie - TEAM : אני חושבת שתשימי את זה בApp
+18:18:24	 From  Maayan Algresie - TEAM : ננסה
+18:19:15	 From  Maayan Algresie - TEAM : עכשיו
+18:19:39	 From  Maayan Algresie - TEAM : את יכולה להגדיר בApp שitemList הוא חלק מהstate
+18:20:05	 From  Maayan Algresie - TEAM : ובמקום לעשות לו import
+18:20:36	 From  Maayan Algresie - TEAM : את יכולה לעשות פונקציה בapp שמוסיפה ומורידה מהרשימה
+18:21:10	 From  Maayan Algresie - TEAM : ולהעביר אותה לheader ולMyUL
+18:29:34	 From  Maayan Algresie - TEAM : ניסיתי להסביר מה אני רוצה לעשות
+18:29:41	 From  Maayan Algresie - TEAM : אני לא חושבת שזה מתקמפל בכלל
+18:30:00	 From  Maayan Algresie - TEAM : אבל הרעיון הוא שהקומפוננטה App תחזיק את הרשימה
+18:30:12	 From  Maayan Algresie - TEAM : היא יכולה לשנות אותה להוסיף ולמחוק
+18:30:33	 From  Maayan Algresie - TEAM : וגדי שהheader יוגל להוסיף אנחנו נעביר לו את הפונקציה המוסיפה
+18:30:58	 From  Maayan Algresie - TEAM : וכדי ש myUL יוכל להוריד נעביר לו פונקציה מסירה
+18:31:18	 From  Maayan Algresie - TEAM : הם לא יגעו ברשימה רק הapp 
+18:31:22	 From  Maayan Algresie - TEAM : יותר מובן?
+18:31:30	 From  Maayan Algresie - TEAM : אני חייבת להצטרף למפגש צוות שלי
+18:31:41	 From  Maayan Algresie - TEAM : אבל אני יכולה לתת לך את המספר שלי ונדבר על זה
+18:32:00	 From  Adi N : סבבה,כי לא ממש הבנתי מה עשית
+18:32:04	 From  Maayan Algresie - TEAM : גם בטלפון אולי זה יהיה יותר ברור
+18:32:11	 From  Adi N : 050-699-5534
+18:32:14	 From  Adi N : זה שלי
+18:32:22	 From  Maayan Algresie - TEAM : 0502135688
+18:32:30	 From  Maayan Algresie - TEAM : דברי איתי ב21?
+18:32:37	 From  Adi N : סבבה, תודה

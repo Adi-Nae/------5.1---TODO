@@ -1,9 +1,6 @@
 import React from 'react';
 import './header.css'
-import { itemsList } from './myUL';
-
-let updateditemsList = itemsList; 
-let keyList;     
+  
 
 const initialState = {
     myTitle: ""
@@ -12,13 +9,11 @@ const initialState = {
 class Header extends React.Component {
     state = initialState;
     
-      change = e => {
-        console.log(e.target.name +" : "+ e.target.value);
+    change = e => {
         this.setState({
           [e.target.name]: e.target.value
         });
       };
-
 
     onClick = e => {
         console.log("Add : "+ this.state.myTitle)
@@ -28,18 +23,12 @@ class Header extends React.Component {
             alert("את/ה חייב/ת לכתוב משהו!  לא ניתן להשאר שדה זה ריק");
         } else {
             // יצירת אובייקט חדש
-            console.log(updateditemsList);
-
-            keyList = updateditemsList.length;
-            updateditemsList.push({id:keyList, itemList:this.state.myTitle})
-
+            console.log(this.props.itemsList.length);
+            this.props.add({id:this.props.itemsList.length, itemList:this.state.myTitle});
 
             // מחיקת התוכן
-            console.log(this.state);
             this.setState(initialState);
         }
-
-
     };  
     
       
@@ -63,4 +52,4 @@ class Header extends React.Component {
 
 }
 
-export default Header
+export default Header;

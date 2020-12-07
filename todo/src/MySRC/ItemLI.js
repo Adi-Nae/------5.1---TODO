@@ -7,15 +7,14 @@ class Item extends React.Component {
     
     onClick = e => {
         console.log(e);
-        if (e.target.parentElement.className == "open"){
+        if (e.target.parentElement.className === "open"){
             e.target.parentElement.className = "close"
         }else {
             console.log(e.target.className);
-            if(e.target.className == "open"){
+            if(e.target.className === "open"){
                 e.target.className = "checked"
             }else{
                 e.target.className = "open" 
-                console.log(e.target.className);
             }
             
         } 
@@ -25,9 +24,10 @@ class Item extends React.Component {
     
     
     render(){
+        console.log(this.props);
         return (
             <li className="open" onClick={e => this.onClick(e)}>
-                {props.item}
+                {this.props.itemList}
                 <span className="x" onClick={e => this.onClick(e)} > x </span>    
             </li>
         );

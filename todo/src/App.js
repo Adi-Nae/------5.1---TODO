@@ -4,16 +4,20 @@ import './App.css';
 import Header from "./MySRC/header";
 import MyUL from "./MySRC/myUL";
 
-export const itemsList = [{ id: 0, itemList: "1" }];
+export const itemsList = [ ];
 let add;
 
 class App extends React.Component {
-  state={items:itemsList};
+  constructor() {
+    super()
+    this.state = {items:itemsList}
+    this.add = this.add.bind(this);
+}
+
   
   add(item){
-    const items=[...this.state.items] ;
-    items.push(item);
-    this.setState({items:items});
+    itemsList.push(item);   
+    this.setState({item:itemsList});
   }
  
   render(){
@@ -21,7 +25,7 @@ class App extends React.Component {
       <div className="App">
         <Header itemsList={this.state.items } add={this.add} />
         <br />
-        <MyUL itemsList={this.state.items }/>
+        <MyUL itemsList={this.state.items} />
       </div>
     );
   }

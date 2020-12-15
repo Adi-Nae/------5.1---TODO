@@ -23,7 +23,6 @@ class Header extends React.Component {
             alert("את/ה חייב/ת לכתוב משהו!  לא ניתן להשאר שדה זה ריק");
         } else {
             // יצירת אובייקט חדש
-            console.log(this.props.itemsList.length);
             this.props.add({id:this.props.itemsList.length, itemList:this.state.myTitle});
 
             // מחיקת התוכן
